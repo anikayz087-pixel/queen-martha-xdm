@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Queen Martha XDM</title>
+<style>
+body { font-family: Arial, sans-serif; background-color: #1e293b; color: white; text-align: center; padding: 40px 20px; }
+h1 { color: #38bdf8; }
+a { color: #38bdf8; }
+#botPic { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 4px solid #38bdf8; }
+.features { margin: 20px auto; max-width: 400px; }
+.card { background-color: rgba(255,255,255,0.1); border-left: 4px solid #38bdf8; padding: 12px; margin: 10px 0; border-radius: 8px; text-align: left; }
+.links { margin: 20px 0; }
+.links a { display: inline-block; background-color: #38bdf8; color: #1e293b; text-decoration: none; padding: 10px 18px; margin: 5px; border-radius: 8px; }
+button { background-color: #38bdf8; border: none; padding: 12px 24px; font-size: 18px; border-radius: 8px; }
+.copyright { margin: 40px auto 0; padding: 15px; border: 1px solid #dc2626; border-radius: 8px; font-size: 14px; max-width: 400px; }
+.copyright strong { color: #fca5a5; }
+</style>
+</head>
+<body>
+
+<img id="botPic" src="https://res.cloudinary.com/rwiwilmp/image/upload/f_auto,q_auto/IMG-20261123-WA0026" alt="My bot">
+
+<h1>Queen Martha XDM</h1>
+<p>The fastest status viewing bot, now with improved AI.</p>
+
+<div class="features">
+  <div class="card">⚡ Fastest status viewing</div>
+  <div class="card">🤖 Improved AI replies</div>
+  <div class="card">🔒 Simple and easy to use</div>
+</div>
+
+<p>Contact: <a href="tel:+256758036440">+256 758 036 440</a></p>
+
+<div class="links">
+  <a href="https://wa.me/256758036440" target="_blank">WhatsApp</a>
+  <a href="https://t.me/KATO" target="_blank">Telegram</a>
+</div>
+
+<button id="colorBtn">Tap me</button>
+
+<div class="copyright">
+  <strong>⚠️ Copyright Notice</strong>
+  <p>Queen Martha XDM, including its name, picture, design and code, belongs to its owner. Copying, re-uploading, reselling or claiming this bot as your own without permission is not allowed.</p>
+  <p>&copy; 2026 Queen Martha XDM. All rights reserved.</p>
+</div>
+
+<script>
+const button = document.getElementById("colorBtn");
+const colors = ["#1e293b", "#7c3aed", "#059669", "#dc2626", "#d97706"];
+let index = 0;
+button.addEventListener("click", function () {
+  index = index + 1;
+  if (index >= colors.length) { index = 0; }
+  document.body.style.backgroundColor = colors[index];
+});
+</script>
+
+</body>
+  </html>
